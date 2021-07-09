@@ -1,0 +1,36 @@
+<html>
+
+<script>
+
+    function what(){
+       
+        for(let i=0;i<document.forms[0].elements.length;i++){
+
+            if(document.forms[0].elements[i].value=="" && document.forms[0].elements[i].type=="text"){
+
+                document.getElementById("errorun"+i).style.visibility="visible";
+                document.forms[0].elements[i].focus();
+            }              
+                        
+        }
+    }
+
+</script>
+
+<form>
+
+    <input><span style="color: red;visibility: hidden" id="errorun0"> Value in element is missing</span><br>
+    <input><span style="color: red;visibility: hidden" id="errorun1"> Value in element is missing</span><br>
+    <input><span style="color: red;visibility: hidden" id="errorun2"> Value in element is missing</span><br>
+    <input><span style="color: red;visibility: hidden" id="errorun3"> Value in element is missing</span><br>
+    <input><span style="color: red;visibility: hidden" id="errorun4"> Value in element is missing</span><br>
+    <input><span style="color: red;visibility: hidden" id="errorun5"> Value in element is missing</span><br>
+    <input><span style="color: red;visibility: hidden" id="errorun6"> Value in element is missing</span><br>
+    <input><span style="color: red;visibility: hidden" id="errorun7"> Value in element is missing</span><br>
+    <input><span style="color: red;visibility: hidden" id="errorun8"> Value in element is missing</span><br>
+    <input><span style="color: red;visibility: hidden" id="errorun9"> Value in element is missing</span><br>
+    <input type="Button" onclick="what()">
+
+</form>
+
+</html>

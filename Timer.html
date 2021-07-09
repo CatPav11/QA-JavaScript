@@ -1,0 +1,41 @@
+<html>
+
+
+
+<input type="text" name="" id="clock" value="0">
+<input type="button" value ="start" onclick="start()">
+<input type="button" value ="stop" onclick="stop()">
+
+
+
+<script>
+
+let textBox=document.getElementById("clock");
+let timer;
+
+    function start (){  
+        timer=setInterval(increment,100);    
+    }
+    function stop (){  
+        clearInterval(timer);    
+    }
+
+
+    function increment(){
+        
+        textBox.value=parseInt(textBox.value)+1;
+        
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</html>

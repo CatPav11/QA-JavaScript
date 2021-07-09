@@ -1,0 +1,55 @@
+<html>
+
+
+<body onmousemove="what()">
+    <input type="button" onclick="changecolor()">
+    <input type="button" value="Font" onclick="changefontsize()">
+    <b id="qa" style="position: absolute; top: 10; left: 0;"> Catherine </b>
+
+</body>
+
+<script>
+
+    let FSize=10;
+    let ref=document.getElementById("qa");
+
+    
+    function what(){
+        ref.style.top=event.clientY+30;
+        ref.style.left=event.clientx;
+        ref.style.fontSize=event.clientY;
+
+
+    }
+
+    function changecolor(){
+        ref.style.color="green";
+
+    }
+
+    function changefontsize(){
+        FSize++;
+        ref.style.fontSize=FSize;
+        ref.style.fontSize= event.clientY;
+
+    }
+
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
